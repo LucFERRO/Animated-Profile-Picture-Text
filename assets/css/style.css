@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    width: 400%;
+    height: 400%;
+    background: url(/assets/img/Snow_Paladin_bigger.png) no-repeat center;
+    transform: scale(0.3);
+    filter: brightness(1.5) contrast(1.5);
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {transform: rotate(360deg)};
+    100% {transform: rotate(0deg)};
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
