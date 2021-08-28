@@ -26,7 +26,7 @@ body {
     position: relative;
     width: 400%;
     height: 400%;
-    background: url(/assets/img/Snow_Paladin_bigger.png) no-repeat center;
+    background: url(../assets/img/Snow_Paladin_bigger.png) no-repeat center;
     transform: scale(0.3);
     filter: brightness(1.5) contrast(1.5);
 }
